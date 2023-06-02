@@ -1,0 +1,58 @@
+@media only screen and (min-width: 768px) {
+    
+    footer {
+        text-align: left;
+    }
+    
+    .úvod__tlačítka {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .úvod .tlačítko {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .úvod__společnosti {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container__statistiky {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .container-řečníci {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .řečník {
+        flex: 0 0 45%;
+        margin: 0;
+    }
+
+    .container-lístky {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__sítě {
+        justify-content: flex-start;
+    }
+
+    .footer__copyright {
+        text-align: center;
+    }
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/hamburger.css">
     <title>Bracket</title>
 </head>
@@ -43,7 +44,7 @@
             <div class="úvod__container">
                 <div>
                     <h1 class="hlavní-nadpis"><span class="modrý-text">Bracket</span>, perfektní místo pro zdokolanení vašich znalostí v oblasti IT a nalezení podobně smýšlející komunity</h1>
-                    <div>
+                    <div class="úvod__tlačítka">
                         <a class="tlačítko" href="#">Program</a>
                         <a class="tlačítko" href="#">Koupit lístky</a>
                     </div>
@@ -82,7 +83,7 @@
         </section>
         <section>
             <h2>Řečníci</h2>
-            <div>
+            <div class="container-řečníci">
                 <figure class="řečník">
                     <div class="řečník__obrázek"><img class="responzivní-obrázek" src="./img/pavel-baudiš.jpg" alt="Portrét Pavla Baudiše"></div>
                     <figcaption>
@@ -177,7 +178,7 @@
         </section>
         <section>
             <h2>Ceník</h2>
-            <div>
+            <div class="container-lístky">
                 <article class="lístek">
                     <div class="lístek__header">
                         <h3 class="lístek__header-text">Běžný lístek</h3>
@@ -214,7 +215,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div>
+        <div class="container-footer">
             <ul class="footer__sloupec">
                 <li class="footer__položka"><div><img src="./img/logo.svg" alt="Logo Bracketu"></div></li>
                 <li class="footer__položka"><a href="mailto:kontakt@bracket.cz"><i class="fa-solid fa-envelope ikona"></i>kontakt@bracket.cz</a></li>
@@ -257,6 +258,12 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                }
+            }
         })
       </script>
 </body>
