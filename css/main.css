@@ -1,0 +1,282 @@
+html {
+    font-family: 'Rubik', sans-serif;
+    color: var(--barva-fontu);
+}
+
+:root {
+    --hlavní-modrá: #0496FF;
+    --barva-fontu: #424242;
+    --bílá: #FAFAFA;
+    --světle-modrá: #E6F2FF;
+    --světle-šedá: #F2F2F2;
+    --šedá: #818181;
+    --swiper-navigation-color: var(--hlavní-modrá);
+    --swiper-pagination-color: var(--hlavní-modrá);
+    --swiper-pagination-bottom: 4px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    background-color: var(--bílá);
+}
+
+h1, h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: var(--barva-fontu);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--barva-fontu);
+}
+
+section {
+    padding: 1rem 5%;
+}
+
+.responzivní-obrázek {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    background-color: var(--světle-modrá);
+}
+
+.nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__odkazy {
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--světle-modrá);
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: .25s;
+}
+
+.nav__odkazy.active {
+    transform: scaleX(1);
+    transition: .25s;
+}
+
+.nav__odkaz {
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+.nav__odkaz .tlačítko {
+    font-weight: 400;
+}
+
+.container__statistiky {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistika__číslo {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.statistika__název {
+    font-weight: 300;
+    margin-top: .5rem;
+}
+
+.úvod__společnost {
+    margin: .5rem 0;
+}
+
+.úvod__obrázek {
+    margin-top: 1rem;
+}
+
+.úvod__obrázek-společnosti {
+    height: 48px;
+    width: min-content;
+}
+
+.popis-akce__odstavec {
+    margin: .5rem 0
+}
+
+.popis-akce__obrázek {
+    margin-bottom: -1rem;
+}
+
+.řečník {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.řečník__obrázek {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+
+.řečník__jméno {
+    margin: .5rem 0;
+}
+
+.řečník__pozice {
+    font-weight: 300;
+}
+
+.jazyky {
+    padding: 1em 0;
+    background-color: var(--světle-šedá);
+    border-radius: 1em;
+}
+
+.jazyk {
+    height: 250px;
+}
+
+.jazyk__logo {
+    height: 200px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+}
+
+.jazyk .responzivní-obrázek {
+    object-fit: contain;
+}
+
+.jazyk__popis {
+    margin-top: .5rem;
+}
+
+.lístek {
+    margin: 1rem 0;
+    background-color: var(--světle-šedá);
+}
+
+.lístek--modrý {
+    background-color: var(--světle-modrá);
+}
+
+.lístek__header {
+    padding: .25em 0;
+    background-color: var(--šedá);
+    border: 1px solid var(--šedá);
+    border-radius: 1em 1em 0 0;
+}
+
+.lístek__header--modrý {
+    background-color: var(--hlavní-modrá);
+    border-color: var(--hlavní-modrá);
+}
+
+.lístek__obsah {
+    padding-top: .5em;
+    border: 1px solid var(--šedá);
+    border-radius: 0 0 1em 1em;
+}
+
+.lístek__obsah--modrý {
+    border-color: var(--hlavní-modrá);
+}
+
+.lístek__header-text {
+    color: var(--bílá);
+}
+
+.lístek__položka {
+    margin: .25em 0;
+    color: var(--šedá);
+}
+
+.lístek__položka--modrá {
+    color: var(--hlavní-modrá);
+}
+
+.footer {
+    background-color: var(--světle-modrá);
+}
+
+.footer__sloupec {
+    margin-bottom: 1rem 0;
+}
+
+.footer__sítě {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__sociální-síť {
+    display: none;
+}
+
+.footer__položka {
+    margin: .5em 0;
+}
+
+.footer__copyright {
+    width: 90%;
+    padding: .5em 0;
+    margin: 0 auto;
+    border-top: 1px solid var(--hlavní-modrá);
+}
+
+.modrý-text {
+    color: var(--hlavní-modrá);
+}
+
+.tlačítko {
+    display: block;
+    width: max-content;
+    color: var(--hlavní-modrá);
+    padding: .5em 1em;
+    margin: .5rem auto;
+    border: 1px solid var(--hlavní-modrá);
+    border-radius: 2em;
+}
+
+.tlačítko--šedé {
+    color: var(--šedá);
+    border-color: var(--šedá);
+}
+
+.modrá-sekce {
+    background-color: var(--světle-modrá);
+}
+
+.tlačítko:visited {
+    color: var(--hlavní-modrá);
+}
+
+.tlačítko--šedé:visited {
+    color: var(--šedá);
+}
+
+.ikona {
+    color: var(--hlavní-modrá);
+    margin-right: 1em;
+}

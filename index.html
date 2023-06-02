@@ -5,226 +5,259 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/e911d031db.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
     <title>Bracket</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="nav">
             <menu>
-                <li><img src="./img/logo.svg"></img></li>
+                <li><img src="./img/logo.svg" alt="Logo Bracketu"></li>
             </menu>
-            <menu>
-                <li><a href="#">Úvod</a></li>
-                <li><a href="#">Program</a></li>
-                <li><a href="#">Galerie</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Koupit lístky</a></li>
+            <menu class="nav__odkazy">
+                <li class="nav__odkaz"><a href="#">Úvod</a></li>
+                <li class="nav__odkaz"><a href="#">Program</a></li>
+                <li class="nav__odkaz"><a href="#">Galerie</a></li>
+                <li class="nav__odkaz"><a href="#">Kontakt</a></li>
+                <li class="nav__odkaz"><a class="tlačítko" href="#">Koupit lístky</a></li>
             </menu>
-            <menu>
+            <menu class="nav__hamburger-blok">
                 <li>
-                    <a href="#">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <a class="nav__hamburger" href="#">
+                        <div class="nav__hamburger-bar"></div>
+                        <div class="nav__hamburger-bar"></div>
+                        <div class="nav__hamburger-bar"></div>
                     </a>
                 </li>
             </menu>
         </nav>
     </header>
     <main>
-        <section>
-            <div>
+        <section class="úvod">
+            <div class="úvod__container">
                 <div>
-                    <h1><span>Bracket</span>, perfektní místo pro zdokolanení vašich znalostí v oblasti IT a nalezení podobně smýšlející komunity</h1>
+                    <h1 class="hlavní-nadpis"><span class="modrý-text">Bracket</span>, perfektní místo pro zdokolanení vašich znalostí v oblasti IT a nalezení podobně smýšlející komunity</h1>
                     <div>
-                        <a href="#">Program</a>
-                        <a href="#">Koupit lístky</a>
+                        <a class="tlačítko" href="#">Program</a>
+                        <a class="tlačítko" href="#">Koupit lístky</a>
                     </div>
-                    <div>
-                        <div>
-                            <p>7</p>
-                            <p>Programovacích jazyků</p>
+                    <div class="container__statistiky">
+                        <div class="statistika">
+                            <p class="statistika__číslo">7</p>
+                            <p class="statistika__název">Programovacích jazyků</p>
                         </div>
-                        <div>
-                            <p>2 400</p>
-                            <p>Účastníků</p>
+                        <div class="statistika">
+                            <p class="statistika__číslo">2 400</p>
+                            <p class="statistika__název">Účastníků</p>
                         </div>
-                        <div>
-                            <p>6.</p>
-                            <p>Ročník</p>
+                        <div class="statistika">
+                            <p class="statistika__číslo">6.</p>
+                            <p class="statistika__název">Ročník</p>
                         </div>
                     </div>
                 </div>
-                <div><img src="./img/úvodní-obrázek.webp" alt="Dvě ženy pracující na nějakém kódu na notebooku"></div>
+                <div class="úvod__obrázek"><img class="responzivní-obrázek" src="./img/úvodní-obrázek.webp" alt="Dvě ženy pracující na nějakém kódu na notebooku"></div>
             </div>
-            <div>
-                <div><img src="./img/loga/microsoft-logo.png" alt="Logo Microsoftu"></div>
-                <div><img src="./img/loga/hp-logo.png" alt="Logo Hp"></div>
-                <div><img src="./img/loga/jetbrains-logo.png" alt="Logo JetBrains"></div>
-                <div><img src="./img/loga/avast-logo.png" alt="Logo Avastu"></div>
-                <div><img src="./img/loga/čvut-logo.svg" alt="Logo ČVUT FIT"></div>
+            <div class="úvod__společnosti">
+                <div class="úvod__společnost"><img class="úvod__obrázek-společnosti" src="./img/loga/microsoft-logo.png" alt="Logo Microsoftu"></div>
+                <div class="úvod__společnost"><img class="úvod__obrázek-společnosti" src="./img/loga/hp-logo.png" alt="Logo Hp"></div>
+                <div class="úvod__společnost"><img class="úvod__obrázek-společnosti" src="./img/loga/jetbrains-logo.png" alt="Logo JetBrains"></div>
+                <div class="úvod__společnost"><img class="úvod__obrázek-společnosti" src="./img/loga/avast-logo.png" alt="Logo Avastu"></div>
+                <div class="úvod__společnost"><img class="úvod__obrázek-společnosti" src="./img/loga/čvut-logo.svg" alt="Logo ČVUT FIT"></div>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Co je Bracket?</h2>
-                <p>Bracket je komunitou organizovaný hackathon jehož cílem je pomoct vám zdokonalit se v oblasti IT a potkat nové lidi z komunity. Na akci je možné zdokonalit se až v 7 programovacích jazycích, mezi které patří například JavaScript, Python, C++, Ruby a další.</p>
-                <p>Akce se koná již 6. rokem a od svého počátku se posunula velkým krokem kupředu. Bracket se z malé třídní akce posunul ve velký komunitní event sponzorovaný softwarovými giganty a štědrými účastníky. Tento fakt nám poskytl příležitost pořádat soutěže o unikátní ceny a najímat experty z branže pro exkluzivní přednášky jen pro vás.</p>
+        <section class="modrá-sekce">
+            <div class="popis-akce">
+                <h2>Co je <span class="modrý-text">Bracket?</span></h2>
+                <p class="popis-akce__odstavec">Bracket je komunitou organizovaný hackathon jehož cílem je pomoct vám zdokonalit se v oblasti IT a potkat nové lidi z komunity. Na akci je možné zdokonalit se až v 7 programovacích jazycích, mezi které patří například JavaScript, Python, C++, Ruby a další.</p>
+                <p class="popis-akce__odstavec">Akce se koná již 6. rokem a od svého počátku se posunula velkým krokem kupředu. Bracket se z malé třídní akce posunul ve velký komunitní event sponzorovaný softwarovými giganty a štědrými účastníky. Tento fakt nám poskytl příležitost pořádat soutěže o unikátní ceny a najímat experty z branže pro exkluzivní přednášky jen pro vás.</p>
             </div>
-            <div><img src="./img/lekce.jpg" alt="Řečník přednášející před velkým publikem"></div>
+            <div><img class="responzivní-obrázek popis-akce__obrázek" src="./img/lekce.jpg" alt="Řečník přednášející před velkým publikem"></div>
         </section>
         <section>
             <h2>Řečníci</h2>
             <div>
-                <figure>
-                    <div><img src="./img/pavel-baudiš.jpg" alt="Portrét Pavla Baudiše"></div>
+                <figure class="řečník">
+                    <div class="řečník__obrázek"><img class="responzivní-obrázek" src="./img/pavel-baudiš.jpg" alt="Portrét Pavla Baudiše"></div>
                     <figcaption>
-                        <h3>Pavel Baudiš</h3>
-                        <p>Spoluzakladatel Avastu</p>
-                        <a href="#">Program</a>
+                        <h3 class="řečník__jméno">Pavel Baudiš</h3>
+                        <p class="řečník__pozice">Spoluzakladatel Avastu</p>
+                        <a class="tlačítko" href="#">Program</a>
                     </figcaption>
                 </figure>
-                <figure>
-                    <div><img src="./img/martin-michálek.jpg" alt="Portrét Martina Michálka"></div>
+                <figure class="řečník">
+                    <div class="řečník__obrázek"><img class="responzivní-obrázek" src="./img/martin-michálek.jpg" alt="Portrét Martina Michálka"></div>
                     <figcaption>
-                        <h3>Martin Michálek</h3>
-                        <p>Spoluzakladatel portálu VzhůruDolů</p>
-                        <a href="#">Program</a>
+                        <h3 class="řečník__jméno">Martin Michálek</h3>
+                        <p class="řečník__pozice">Spoluzakladatel portálu VzhůruDolů</p>
+                        <a class="tlačítko" href="#">Program</a>
                     </figcaption>
                 </figure>
-                <figure>
-                    <div><img src="./img/david-malan.png" alt="Portrét Davida Malana"></div>
+                <figure class="řečník">
+                    <div class="řečník__obrázek"><img class="responzivní-obrázek" src="./img/david-malan.png" alt="Portrét Davida Malana"></div>
                     <figcaption>
-                        <h3>David Malan</h3>
-                        <p>Profesor počítačových věd na Harvardu</p>
-                        <a href="#">Program</a>
+                        <h3 class="řečník__jméno">David Malan</h3>
+                        <p class="řečník__pozice">Profesor počítačových věd na Harvardu</p>
+                        <a class="tlačítko" href="#">Program</a>
                     </figcaption>
                 </figure>
-                <figure>
-                    <div><img src="./img/marek-rosa.jpg" alt="Portrét Marka Rosy"></div>
+                <figure class="řečník">
+                    <div class="řečník__obrázek"><img class="responzivní-obrázek" src="./img/marek-rosa.jpg" alt="Portrét Marka Rosy"></div>
                     <figcaption>
-                        <h3>Marek Rosa</h3>
-                        <p>Zakladatel GoodAI a Keen Software House</p>
-                        <a href="#">Program</a>
+                        <h3 class="řečník__jméno">Marek Rosa</h3>
+                        <p class="řečník__pozice">Zakladatel GoodAI a Keen Software House</p>
+                        <a class="tlačítko" href="#">Program</a>
                     </figcaption>
                 </figure>
             </div>
         </section>
         <section>
             <h2>Jakým jazykům se věnujeme</h2>
-            <div>
-                <figure>
-                    <div><img src="./img/loga/javascript-logo.png" alt="Logo programovacího jazyku JavaScript"></div>
-                    <figcaption>
-                        <p>JavaScript</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <div><img src="./img/loga/python.png" alt="Logo programovacího jazyku Python"></div>
-                    <figcaption>
-                        <p>Python</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <div><img src="./img/loga/cplus-logo.png" alt="Logo programovacího jazyku C++"></div>
-                    <figcaption>
-                        <p>C++</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <div><img src="./img/loga/java-logo.png" alt="Logo programovacího jazyku Java"></div>
-                    <figcaption>
-                        <p>Java</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <div><img src="./img/loga/go-logo.png" alt="Logo programovacího jazyku Go"></div>
-                    <figcaption>
-                        <p>Go</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <div><img src="./img/loga/csharp-logo.png" alt="Logo programovacího jazyku C#"></div>
-                    <figcaption>
-                        <p>C#</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <div><img src="./img/loga/ruby-logo.png" alt="Logo programovacího jazyku Ruby"></div>
-                    <figcaption>
-                        <p>Ruby</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <div><img src="./img/loga/kotlin-logo.png" alt="Logo programovacího jazyku Kotlin"></div>
-                    <figcaption>
-                        <p>Kotlin</p>
-                    </figcaption>
-                </figure>
+            <div class="swiper jazyky">
+                <div class="swiper-wrapper">
+                    <figure class="swiper-slide jazyk">
+                        <div class="jazyk__logo"><img class="responzivní-obrázek" src="./img/loga/javascript-logo.png" alt="Logo programovacího jazyku JavaScript"></div>
+                        <figcaption class="jazyk__popis">
+                            <p>JavaScript</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="swiper-slide jazyk">
+                        <div class="jazyk__logo"><img class="responzivní-obrázek" src="./img/loga/python.png" alt="Logo programovacího jazyku Python"></div>
+                        <figcaption class="jazyk__popis">
+                            <p>Python</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="swiper-slide jazyk">
+                        <div class="jazyk__logo"><img class="responzivní-obrázek" src="./img/loga/cplus-logo.png" alt="Logo programovacího jazyku C++"></div>
+                        <figcaption class="jazyk__popis">
+                            <p>C++</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="swiper-slide jazyk">
+                        <div class="jazyk__logo"><img class="responzivní-obrázek" src="./img/loga/java-logo.png" alt="Logo programovacího jazyku Java"></div>
+                        <figcaption class="jazyk__popis">
+                            <p>Java</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="swiper-slide jazyk">
+                        <div class="jazyk__logo"><img class="responzivní-obrázek" src="./img/loga/go-logo.png" alt="Logo programovacího jazyku Go"></div>
+                        <figcaption class="jazyk__popis">
+                            <p>Go</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="swiper-slide jazyk">
+                        <div class="jazyk__logo"><img class="responzivní-obrázek" src="./img/loga/csharp-logo.png" alt="Logo programovacího jazyku C#"></div>
+                        <figcaption class="jazyk__popis">
+                            <p>C#</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="swiper-slide jazyk">
+                        <div class="jazyk__logo"><img class="responzivní-obrázek" src="./img/loga/ruby-logo.png" alt="Logo programovacího jazyku Ruby"></div>
+                        <figcaption class="jazyk__popis">
+                            <p>Ruby</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="swiper-slide jazyk">
+                        <div class="jazyk__logo"><img class="responzivní-obrázek" src="./img/loga/kotlin-logo.png" alt="Logo programovacího jazyku Kotlin"></div>
+                        <figcaption class="jazyk__popis">
+                            <p>Kotlin</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
         <section>
             <h2>Ceník</h2>
             <div>
-                <article>
-                    <div>
-                        <h3>Běžný lístek</h3>
-                        <p>499,90Kč</p>
+                <article class="lístek">
+                    <div class="lístek__header">
+                        <h3 class="lístek__header-text">Běžný lístek</h3>
+                        <p class="lístek__header-text">499,90Kč</p>
                     </div>
-                    <ul>
-                        <li>Přístup do všech workshopů</li>
-                        <li>Možnost účastnit se všech 4 přednášek</li>
-                        <li>Přístup ke zdrojům, které budou během akce k dispozici</li>
-                    </ul>
-                    <a href="#">Koupit lístek</a>
+                    <div class="lístek__obsah">
+                        <ul>
+                            <li class="lístek__položka">Přístup do všech workshopů</li>
+                            <li class="lístek__položka">Možnost účastnit se všech 4 přednášek</li>
+                            <li class="lístek__položka">Přístup ke zdrojům, které budou během akce k dispozici</li>
+                        </ul>
+                        <a class="tlačítko tlačítko--šedé" href="#">Koupit lístek</a>
+                    </div>
                 </article>
-                <article>
-                    <div>
-                        <h3>VIP lístek</h3>
-                        <p>999,90Kč</p>
+                <article class="lístek lístek--modrý">
+                    <div class="lístek__header lístek__header--modrý">
+                        <h3 class="lístek__header-text">VIP lístek</h3>
+                        <p class="lístek__header-text">999,90Kč</p>
                     </div>
-                    <ul>
-                        <li>Přístup o 2 hodiny dříve</li>
-                        <li>Přístup do všech workshopů</li>
-                        <li>Možnost účastnit se všech 4 přednášek</li>
-                        <li>Přístup ke zdrojům, které budou během akce k dispozici</li>
-                        <li>Možnost soutěžit o unikátní ceny</li>
-                        <li>Meet & Greet s vystupujícími řečníky</li>
-                        <li>Exkluzivní VIP zóna pro odpočinek, s občerstvením</li>
-                    </ul>
-                    <a href="#">Koupit lístek</a>
+                    <div class="lístek__obsah lístek__obsah--modrý">
+                        <ul>
+                            <li class="lístek__položka lístek__položka--modrá">Přístup o 2 hodiny dříve</li>
+                            <li class="lístek__položka lístek__položka--modrá">Přístup do všech workshopů</li>
+                            <li class="lístek__položka lístek__položka--modrá">Možnost účastnit se všech 4 přednášek</li>
+                            <li class="lístek__položka lístek__položka--modrá">Přístup ke zdrojům, které budou během akce k dispozici</li>
+                            <li class="lístek__položka lístek__položka--modrá">Možnost soutěžit o unikátní ceny</li>
+                            <li class="lístek__položka lístek__položka--modrá">Meet & Greet s vystupujícími řečníky</li>
+                            <li class="lístek__položka lístek__položka--modrá">Exkluzivní VIP zóna pro odpočinek, s občerstvením</li>
+                        </ul>
+                        <a class="tlačítko" href="#">Koupit lístek</a>
+                    </div>
                 </article>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div>
-            <ul>
-                <li><div><img src="./img/logo.svg" alt="Logo Bracketu"></div></li>
-                <li><a href="mailto:kontakt@bracket.cz"><i class="fa-solid fa-envelope"></i>kontakt@bracket.cz</a></li>
-                <li><a href="tel:777 333 450"><i class="fa-solid fa-phone"></i>777 333 450</a></li>
-                <div>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
-                </div>
+            <ul class="footer__sloupec">
+                <li class="footer__položka"><div><img src="./img/logo.svg" alt="Logo Bracketu"></div></li>
+                <li class="footer__položka"><a href="mailto:kontakt@bracket.cz"><i class="fa-solid fa-envelope ikona"></i>kontakt@bracket.cz</a></li>
+                <li class="footer__položka"><a href="tel:777333450"><i class="fa-solid fa-phone ikona"></i>777 333 450</a></li>
+                <li class="footer__položka">
+                    <ul class="footer__sítě">
+                        <li><a href="#"><i class="fa-brands fa-instagram ikona"></i><span class="footer__sociální-síť">Instagram</span></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f ikona"></i><span class="footer__sociální-síť">Facebook</span></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in ikona"></i><span class="footer__sociální-síť">LinkedIn</span></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter ikona"></i><span class="footer__sociální-síť">Twitter</span></a></li>
+                    </ul>
+                </li>
             </ul>
-            <ul>
-                <li><a href="#">Úvod</a></li>
-                <li><a href="#">Program</a></li>
-                <li><a href="#">Galerie</a></li>
-                <li><a href="#">Kontakt</a></li>
+            <ul class="footer__sloupec">
+                <li class="footer__položka"><a href="#">Úvod</a></li>
+                <li class="footer__položka"><a href="#">Program</a></li>
+                <li class="footer__položka"><a href="#">Galerie</a></li>
+                <li class="footer__položka"><a href="#">Kontakt</a></li>
             </ul>
-            <ul>
-                <li><a href="Všeobecné podmínky"></a></li>
-                <li>Vyrobilo: D Interactive</li>
+            <ul class="footer__sloupec">
+                <li class="footer__položka"><a href="#">Všeobecné podmínky</a></li>
+                <li class="footer__položka">Vyrobilo: D Interactive</li>
             </ul>
         </div>
-        <div>
+        <div class="footer__copyright">
             <p>© 2023 Bracket</p>
         </div>
     </footer>
+    <script src="./hamburger.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper(".swiper", {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+      </script>
 </body>
 </html>

@@ -1,0 +1,20 @@
+.nav__hamburger {
+    width: 32px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.nav__hamburger-bar {
+    height: 4px;
+    background-color: var(--hlavní-modrá);
+}
+
+@media only screen and (min-width: 1280px) {
+    .nav__hamburger-blok {
+        display: none;
+    }
+}
