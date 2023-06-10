@@ -1,0 +1,82 @@
+@media only screen and (min-width: 1200px) {
+    body {
+        text-align: left;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    
+    .nav__odkazy {
+        position: static;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        transform: scaleX(1);
+    }
+
+    .nav__odkaz {
+        margin: 0;
+    }
+
+    .nav__odkaz a {
+        padding: calc((45px - 1rem) / 2 - 3.2px)  1rem;
+    }
+
+    .nav .tlačítko {
+        margin: 0;
+    }
+
+    .běžný-flex {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .běžný-flex__obrázek {
+        flex: 0 0 50%;
+        margin: 0;
+    }
+
+    .úvod__tlačítka {
+        justify-content: flex-start;
+    }
+
+    .container__statistiky {
+        justify-content: flex-start;
+    }
+
+    .úvod__společnosti {
+        margin-top: 1rem;
+    }
+
+    .modrá-sekce {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .popis-akce {
+        text-align: center;
+    }
+
+    .popis-akce__obrázek {
+        margin: 0;
+    }
+
+    .řečník {
+        text-align: center;
+        flex-basis: 20%;
+    }
+
+    .jazyk__popis {
+        text-align: center;
+    }
+
+    .lístek {
+        text-align: center;
+    }
+
+    .footer__sloupec--vycenterovaný {
+        text-align: center;
+    }
+}

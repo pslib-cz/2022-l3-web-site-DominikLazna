@@ -10,6 +10,7 @@ html {
     --světle-modrá: #E6F2FF;
     --světle-šedá: #F2F2F2;
     --šedá: #818181;
+    --hover-modrá: #cae0f8;
     --swiper-navigation-color: var(--hlavní-modrá);
     --swiper-pagination-color: var(--hlavní-modrá);
     --swiper-pagination-bottom: 4px;
@@ -116,8 +117,8 @@ footer {
     margin-top: .5rem;
 }
 
-.úvod__obrázek {
-    margin: 1rem 0;
+.běžný-flex__obrázek {
+    margin-top: 1rem;
 }
 
 .úvod__obrázek-společnosti {
@@ -166,6 +167,11 @@ footer {
 
 .jazyk {
     height: 250px;
+}
+
+.jazyk:hover {
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .jazyk__logo {
@@ -269,6 +275,19 @@ footer {
     margin: .5rem auto;
     border: 1px solid var(--hlavní-modrá);
     border-radius: 2em;
+    transition: .5s;
+}
+
+.tlačítko:visited {
+    color: var(--hlavní-modrá);
+}
+
+.tlačítko:hover {
+    color: var(--bílá);
+    background-color: var(--hlavní-modrá);
+    box-shadow: 0 0 16px var(--hlavní-modrá);
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .tlačítko--šedé {
@@ -276,19 +295,25 @@ footer {
     border-color: var(--šedá);
 }
 
-.modrá-sekce {
-    background-color: var(--světle-modrá);
-}
-
-.tlačítko:visited {
-    color: var(--hlavní-modrá);
-}
-
 .tlačítko--šedé:visited {
     color: var(--šedá);
+}
+
+.tlačítko--šedé:hover {
+    color: var(--bílá);
+    background-color: var(--šedá);
+    box-shadow: 0 0 16px var(--šedá);
+}
+
+.modrá-sekce {
+    background-color: var(--světle-modrá);
 }
 
 .ikona {
     color: var(--hlavní-modrá);
     margin-right: 1em;
+}
+
+.odkaz:hover {
+    color: var(--hlavní-modrá);
 }
