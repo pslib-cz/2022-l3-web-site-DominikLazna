@@ -14,6 +14,7 @@ html {
     --swiper-navigation-color: var(--hlavní-modrá);
     --swiper-pagination-color: var(--hlavní-modrá);
     --swiper-pagination-bottom: 4px;
+    --swiper-navigation-size: 24px;
 }
 
 * {
@@ -263,6 +264,10 @@ footer {
     border-top: 1px solid var(--hlavní-modrá);
 }
 
+.galerie__fotografie {
+    aspect-ratio: 1 / 1;
+}
+
 .modrý-text {
     color: var(--hlavní-modrá);
 }
@@ -316,4 +321,39 @@ footer {
 
 .odkaz:hover {
     color: var(--hlavní-modrá);
+}
+
+.nadpis-vlevo {
+    text-align: left;
+}
+
+.swiper {
+    overflow: visible;
+    user-select: none;
+}
+
+.swiper-button-next {
+    top: -48px;
+    width: 48px;
+    height: 48px;
+    color: var(--bílá);
+    background-color: var(--hlavní-modrá);
+    border-radius: 10em;
+}
+
+.swiper-button-prev {
+    top: -48px;
+    left: auto;
+    right: 72px;
+    width: 48px;
+    height: 48px;
+    color: var(--bílá);
+    background-color: var(--hlavní-modrá);
+    border-radius: 10em;
+}
+
+.header-galerie {
+    padding-top: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
 }
