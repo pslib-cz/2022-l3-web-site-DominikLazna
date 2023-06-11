@@ -14,7 +14,6 @@ html {
     --swiper-navigation-color: var(--hlavní-modrá);
     --swiper-pagination-color: var(--hlavní-modrá);
     --swiper-pagination-bottom: 4px;
-    --swiper-navigation-size: 24px;
 }
 
 * {
@@ -290,7 +289,7 @@ footer {
 .tlačítko:hover {
     color: var(--bílá);
     background-color: var(--hlavní-modrá);
-    box-shadow: 0 0 16px var(--hlavní-modrá);
+    box-shadow: 0 0 8px var(--hlavní-modrá);
     transform: scale(1.1);
     transition: .5s;
 }
@@ -307,7 +306,7 @@ footer {
 .tlačítko--šedé:hover {
     color: var(--bílá);
     background-color: var(--šedá);
-    box-shadow: 0 0 16px var(--šedá);
+    box-shadow: 0 0 8px var(--šedá);
 }
 
 .modrá-sekce {
@@ -325,31 +324,35 @@ footer {
 
 .nadpis-vlevo {
     text-align: left;
+    margin-bottom: 24px;
 }
 
 .swiper {
-    overflow: visible;
+    overflow-y: visible;
+    overflow-x: clip;
     user-select: none;
 }
 
-.swiper-button-next {
+.swiper__tlačítko {
     top: -48px;
     width: 48px;
     height: 48px;
-    color: var(--bílá);
-    background-color: var(--hlavní-modrá);
+    border: 1px solid var(--hlavní-modrá);
     border-radius: 10em;
+    transition: .5s;
 }
 
-.swiper-button-prev {
-    top: -48px;
+.swiper__tlačítko--vlevo {
     left: auto;
     right: 72px;
-    width: 48px;
-    height: 48px;
+}
+
+.swiper__tlačítko:hover {
     color: var(--bílá);
     background-color: var(--hlavní-modrá);
-    border-radius: 10em;
+    box-shadow: 0 0 8px var(--hlavní-modrá);
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .header-galerie {
